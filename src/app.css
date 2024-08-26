@@ -1,0 +1,30 @@
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Teko", sans-serif;
+}
+
+body{
+    background-color: #181818;
+    color: #e6e6e6;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+    width: 100vw;
+    overflow: hidden;
+}
+
