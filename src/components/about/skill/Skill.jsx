@@ -3,13 +3,14 @@ import "./Skill.css";
 import { motion, stagger } from "framer-motion";
 
 const skills = [
-  { name: "React.js", img: "./skills/react_icon.png" },
+  { name: "PHP", img: "./skills/php_icon.png" },        // New core language
+  { name: "Laravel", img: "./skills/laravel_icon.png" },// New core framework
+  { name: "MySQL", img: "./skills/mysql_icon.png" },    // Specific DB mentioned in resume
   { name: "JavaScript", img: "./skills/javascript_icon.png" },
+  { name: "React.js", img: "./skills/react_icon.png" },
+  { name: "Filament", img: "./skills/filament_icon.png" }, // Key tool mentioned in experience
   { name: "HTML", img: "./skills/html_icon.png" },
-  { name: "CSS", img: "./skills/css_icon.png" },
-  { name: "Node JS", img: "./skills/node_js.png" },
-  { name: "SQL", img: "./skills/sql_icon.png" },
-  { name: "Python", img: "./skills/python_icon.png" },
+  { name: "CSS", img: "./skills/css_icon.png" },       // Could also be "Tailwind" if you prefer
   { name: "Git", img: "./skills/git_icon.png" },
 ];
 
@@ -43,14 +44,14 @@ const Skill = () => {
     <div className="skills-section">
       <motion.h2
         className="section-title"
-        initial={{ x: "-100%" , opacity:0}}
-        whileInView={{ x: 0 , opacity:1 }}
-        transition={{ duration: 0.5,  }}
+        initial={{ x: "-100%", opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5, }}
       >
         My Skills
       </motion.h2>
 
-      <motion.div className="skills-container"  variants={containerVariants}
+      <motion.div className="skills-container" variants={containerVariants}
         initial="hidden"
         whileInView="visible">
         {skills.map((skill, index) => (

@@ -43,14 +43,14 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="wrapper">
-        
+
         <motion.div
           className="textContainer"
           variants={textVariants}
           initial="initial"
           animate="animate"
         >
-          <motion.h1 variants={textVariants}>Web Developer</motion.h1>
+          <motion.h1 variants={textVariants}>Software Developer</motion.h1>
           <motion.h2 variants={textVariants}>
             Crafting seamless digital experiences from concept to code
           </motion.h2>
