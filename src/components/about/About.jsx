@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const About = () => {
-  let skills = ["JavaScript", " React.js", " HTML", " CSS"];
+  let skills = ["PHP", "Laravel", "MySQL", "React.js", "Filament", "Tailwind CSS", "Bootstrap"];
 
   // Variants for staggered animation
   const containerVariants = {
@@ -35,10 +35,10 @@ const About = () => {
       >
         <motion.h1 variants={itemVariants}>Passion fuels Purpose!</motion.h1>
         <motion.p variants={itemVariants}>
-          I'm <strong>Janaharan</strong>, a passionate web developer dedicated
-          to learning and creating. Though I'm not currently working, I'm fully
-          committed to sharpening my skills and pushing the boundaries of web
-          development. With expertise in{" "}
+          I'm <strong>Janaharan</strong>, a Software Developer with over a year of
+          professional experience. I currently specialize in building scalable
+          backend systems and ERP solutions at <strong>AWP Solutions Pvt. Ltd</strong>.
+          With expertise in{" "}
           {skills.map((skill, index) => (
             <React.Fragment key={skill}>
               <strong>{skill}</strong>
@@ -48,18 +48,17 @@ const About = () => {
           and more...
         </motion.p>
         <motion.p variants={itemVariants}>
-          I love crafting responsive, user-friendly websites and web
-          applications. I'm excited to contribute to innovative projects and
-          collaborate with others who share my passion for building the future
-          of the web.
+          I love crafting responsive, efficient web applications that solve real-world
+          business problems. I'm dedicated to continuous learning and collaborating
+          with teams to drive impactful projects.
         </motion.p>
-        <motion.a  variants={itemVariants}
-          href="./resume/Janaharan_Resume.pdf"
+        <motion.a variants={itemVariants}
+          href="./resume/Janaharan_Resume_updated.pdf"
           target="_blank"
           rel="noopener noreferrer"
           download={true}
         >
-          <motion.button 
+          <motion.button
             variants={itemVariants}
             whileHover={{
               scale: 1.15,
